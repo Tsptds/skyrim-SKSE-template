@@ -56,10 +56,10 @@ using namespace plugin;
 extern "C" DLLEXPORT bool SKSEPlugin_Load(const LoadInterface* skse) {
     initializeLogging();
 
-    logger::info("'{} {}' is loading, game version '{}'...", Plugin::Name, Plugin::VersionString, REL::Module::get().version().string());
-    Init(skse);
+    logger::info("'{}' by '{}' / Skyrim: '{}'", Plugin::Name, Plugin::Author, Plugin::VersionString, REL::Module::get().version().string());
+    Init(skse, false);
 
     GameEventHandler::getInstance().onLoad();
-    logger::info("{} has finished loading.", Plugin::Name);
+    logger::info("{} loaded.", Plugin::Name);
     return true;
 }
