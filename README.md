@@ -27,6 +27,13 @@ git clone
 then
 
 ~~~
+git submodule init
+git submodule update --remote
+~~~
+
+then
+
+~~~
 .\_Build.bat
 ~~~
 

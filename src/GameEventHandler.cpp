@@ -1,45 +1,45 @@
 #include "GameEventHandler.h"
 #include "Hooks.h"
 
-namespace plugin {
+namespace this_plugin {
     void GameEventHandler::onLoad() {
-        logger::info("onLoad()");
+        INFO("onLoad()");
         Hooks::install();
     }
 
     void GameEventHandler::onPostLoad() {
-        logger::info("onPostLoad()");
+        INFO("onPostLoad()");
     }
 
     void GameEventHandler::onPostPostLoad() {
-        logger::info("onPostPostLoad()");
+        INFO("onPostPostLoad()");
     }
 
     void GameEventHandler::onInputLoaded() {
-        logger::info("onInputLoaded()");
+        INFO("onInputLoaded()");
     }
 
     void GameEventHandler::onDataLoaded() {
-        logger::info("onDataLoaded()");
+        INFO("onDataLoaded()");
     }
 
     void GameEventHandler::onNewGame() {
-        logger::info("onNewGame()");
+        INFO("onNewGame()");
     }
 
     void GameEventHandler::onPreLoadGame() {
-        logger::info("onPreLoadGame()");
+        INFO("onPreLoadGame()");
     }
 
     void GameEventHandler::onPostLoadGame() {
-        logger::info("onPostLoadGame()");
+        INFO("onPostLoadGame()");
     }
 
     void GameEventHandler::onSaveGame() {
-        logger::info("onSaveGame()");
+        INFO("onSaveGame()");
     }
 
     void GameEventHandler::onDeleteGame() {
-        logger::info("onDeleteGame()");
+        INFO("onDeleteGame()");
     }
-}  // namespace plugin
+}

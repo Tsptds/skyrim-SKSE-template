@@ -11,7 +11,7 @@ PackConstructorInitializers: NextLineOnly
 AllowShortBlocksOnASingleLine: Empty
 AllowShortCaseLabelsOnASingleLine: false
 AllowShortFunctionsOnASingleLine: Empty
-AllowShortIfStatementsOnASingleLine: WithoutElse
+AllowShortIfStatementsOnASingleLine: true
 AllowShortLoopsOnASingleLine: false
 SortIncludes: false
 PointerAlignment: Right
@@ -24,3 +24,4 @@ SpaceInEmptyParentheses: false
 BreakBeforeBraces: Custom
 BraceWrapping:
   BeforeElse: true
+FixNamespaceComments: false

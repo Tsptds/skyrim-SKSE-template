@@ -1,6 +1,6 @@
 #pragma once
 
-namespace plugin {
+namespace this_plugin {
     class Hooks {
         public:
             static void install();
@@ -40,4 +40,4 @@ namespace plugin {
                     }
             };
     };
-}  // namespace plugin
+}

@@ -1,10 +1,10 @@
 #include "Hooks.h"
-namespace plugin {
+namespace this_plugin {
     void Hooks::install() {
         QuitGameHook::install();
     }
 
     void Hooks::quitGame() {
-        logger::info("Game quitting");
+        INFO("Game quitting");
     }
-}  // namespace plugin
+}

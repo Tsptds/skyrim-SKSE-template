@@ -1,17 +1,18 @@
 #pragma once
 #include "SkseMessagingListener.h"
 
-namespace plugin {
+namespace this_plugin {
     class GameEventHandler : public SkseMessagingListener<GameEventHandler> {
         private:
             GameEventHandler() {
                 registerListener();
             };
-            GameEventHandler(GameEventHandler&) = delete;
-            GameEventHandler& operator=(GameEventHandler&&) = delete;
-            void operator=(GameEventHandler&) = delete;
+            GameEventHandler(GameEventHandler &) = delete;
+            GameEventHandler &operator=(GameEventHandler &&) = delete;
+            void operator=(GameEventHandler &) = delete;
+
         public:
-            [[nodiscard]] static GameEventHandler& getInstance() {
+            [[nodiscard]] static GameEventHandler &getInstance() {
                 static GameEventHandler instance;
                 return instance;
             }
@@ -27,4 +28,4 @@ namespace plugin {
             void onSaveGame() override;
             void onDeleteGame() override;
     };
-}  // namespace plugin
+}
