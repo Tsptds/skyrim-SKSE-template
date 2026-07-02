@@ -7,6 +7,7 @@
 extern "C" DLLEXPORT bool SKSEPlugin_Load(const SKSE::LoadInterface *skse) {
     LogSetup::initializeLogging();
 
+    // Configure the plugin information in CMakeLists.txt
     INFO("'{}' by '{}' / Skyrim: '{}'", Plugin::Name, Plugin::Author, Plugin::VersionString, REL::Module::get().version().string());
     Init(skse, false);
 
