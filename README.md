@@ -14,9 +14,11 @@
 
 #### ***CommonLibSSE-NG***
 
-To use CommonLibSSE-NG as a git-submodule instead of overlay-ports, clone it to extern/CommonLibSSE-NG and edit vcpkg.json removing "commonlibsse-ng" and adding its dependencies.
+CommonLibSSE-NG is used as a git-submodule by default. To use with overlay-ports, remove the submodule and edit vcpkg.json. Add "commonlibsse-ng" as a dependency and remove it's dependencies.
 
 ## ***Building***
+
+Edit the CMakeLists.txt to configure plugin information (Project name, author etc.)
 
 In `Developer Command Prompt for VS 2022` or `Developer PowerShell for VS 2022`, run:
 
@@ -65,3 +67,6 @@ add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
     COMMAND "C:\\games\\Skyrim\\skse64_loader.exe" WORKING_DIRECTORY "C:\\games\\Skyrim"
 )
 ~~~
+
+## Credits
+- Original template by epinter [SKSE ClibNG Template](https://github.com/epinter/skse-clibng-template)
