@@ -10,8 +10,8 @@ AllowAllArgumentsOnNextLine: false
 PackConstructorInitializers: NextLineOnly
 AllowShortBlocksOnASingleLine: Empty
 AllowShortCaseLabelsOnASingleLine: false
-AllowShortFunctionsOnASingleLine: Empty
-AllowShortIfStatementsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: WithoutElse
 AllowShortLoopsOnASingleLine: false
 SortIncludes: false
 PointerAlignment: Right
@@ -24,4 +24,8 @@ SpaceInEmptyParentheses: false
 BreakBeforeBraces: Custom
 BraceWrapping:
   BeforeElse: true
+  AfterFunction: true
+  AfterNamespace: true
+  AfterControlStatement: true
+
 FixNamespaceComments: false
